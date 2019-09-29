@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
 def create
-  @product = product.create(post_params)
+  @product = Product.create(post_params)
   @product.save
   redirect_to product_path(@product)
 end
