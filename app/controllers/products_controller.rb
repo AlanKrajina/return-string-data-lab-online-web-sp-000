@@ -19,10 +19,10 @@ class ProductsController < ApplicationController
     render plain: @product.description
   end
 
-  private
+#  private
 
-  def product_params
-    params.require(:product).permit(:name, :price, :inventory, :description)
-  end
+#  def product_params
+#    params.require(:product).permit(:name, :price, :inventory, :description)
+#  end
 
 end
